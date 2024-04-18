@@ -1,0 +1,15 @@
+<div>
+    <!-- Hello, Padma -->
+    <h1>Hello, {{customer}}</h1>
+    <ul>
+      <!-- Ebony and Chiho in a list-->
+      @for (customer of customers; track customer) {
+        <li>{{ customer.value }}</li>
+      }
+    </ul>
+    @if (flag) {
+      <span>test</span>
+    }
+    <button (click)="flag = !flag">click me</button>
+  </div>
+
